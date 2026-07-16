@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://w-t-n-b.github.io/saifunomikata-media/sitemap.xml
