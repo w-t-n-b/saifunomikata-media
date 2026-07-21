@@ -298,8 +298,21 @@ h2{font-size:17px;font-weight:900;margin:24px 0 12px}
 /* フッタ */
 footer.site{padding:20px 16px 28px;border-top:1px solid var(--line);background:#F0F0EB}
 footer.site p{font-size:11px;color:var(--soft);line-height:1.8}
-footer.site .links{display:flex;gap:14px;margin-top:10px;font-size:12px;font-weight:700}
+footer.site .links{display:flex;gap:14px;margin-top:10px;font-size:12px;font-weight:700;flex-wrap:wrap}
 footer.site a{color:var(--green)}
+footer.site .foot2{font-size:11px;font-weight:400;gap:12px;margin-top:8px}
+footer.site .foot2 a{color:var(--soft)}
+/* 情報ページ(運営者/プライバシー/免責/お問い合わせ) */
+.doc{padding:16px 16px 26px}
+.doc h2{font-size:15px;font-weight:900;margin:22px 0 8px}
+.doc p,.doc li{font-size:13px;color:var(--ink);line-height:1.9}
+.doc .lead{color:var(--soft)}
+.doc ul{margin:4px 0 4px 20px}
+.doc dl{margin:6px 0}
+.doc dt{font-size:11.5px;font-weight:900;color:var(--soft);margin-top:12px}
+.doc dd{font-size:13.5px;font-weight:700;margin:2px 0 0}
+.doc .todo{color:var(--alert);font-weight:700}
+.doc a{color:var(--green);font-weight:700}
 /* 下部固定アプリバー */
 .appbar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:460px;z-index:30;
  padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(246,246,243,.92);backdrop-filter:blur(8px);
@@ -325,6 +338,7 @@ footer.site a{color:var(--green)}
 <footer class="site">
   <p>掲載の還元率・条件はサンプル値です。ご利用前に各カード公式で最新条件をご確認ください（改定が頻繁なため）。</p>
   <div class="links"><a href="../">トップ</a><a href="../hikaku/">早見表</a><a href="../campaign/">キャンペーン</a><a href="../shindan/">カード診断</a><a href="../app/">アプリ</a></div>
+  <div class="links foot2"><a href="../about/">運営者情報</a><a href="../privacy/">プライバシー</a><a href="../disclaimer/">免責事項</a><a href="../contact/">お問い合わせ</a></div>
 </footer>
 </div>
 <div class="appbar"><a href="https://w-t-n-b.github.io/saifunomikata-demo/" target="_blank"><img class="mk" src="../logo.png" width="60" height="60" alt="">レジ前で最適解が出るアプリを試す<small>無料・登録不要</small></a></div>
