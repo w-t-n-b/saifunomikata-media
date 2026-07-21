@@ -179,10 +179,6 @@ h2{font-size:17px;font-weight:900;margin:24px 0 12px}
 .campcard .who{font-size:11px;color:var(--soft)}
 .campcard .lk{font-size:12.5px;font-weight:700;color:var(--green)}
 /* キャンペーンハブ(ポイ探級の密度×絞り込みUX) */
-.campsum{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 2px}
-.campsum .s{background:#fff;border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:12px;font-weight:700;color:var(--ink)}
-.campsum .s b{font-size:16px;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;margin-right:3px}
-.campsum .s.hot b{color:var(--alert)}
 .brandbar{display:flex;align-items:center;gap:8px;margin:12px 0 2px}
 .brandbar label{font-size:11.5px;font-weight:700;color:var(--soft);flex:none}
 .brandbar select{flex:1;min-width:0;font-family:inherit;font-size:13px;font-weight:700;color:var(--ink);
@@ -193,6 +189,8 @@ h2{font-size:17px;font-weight:900;margin:24px 0 12px}
 .campfilter::-webkit-scrollbar{display:none}
 .campfilter button{flex:none;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:12.5px;font-family:inherit;padding:7px 13px;border-radius:99px;cursor:pointer;white-space:nowrap}
 .campfilter button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.campfilter button i{font-style:normal;font-weight:900;color:var(--soft);margin-left:5px;font-variant-numeric:tabular-nums}
+.campfilter button.on i{color:rgba(255,255,255,.7)}
 .camp{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0;border-left:4px solid var(--line)}
 .camp.hot{border-left-color:var(--alert)}
 .camp[hidden]{display:none}
