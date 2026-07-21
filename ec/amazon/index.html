@@ -183,7 +183,13 @@ h2{font-size:17px;font-weight:900;margin:24px 0 12px}
 .campsum .s{background:#fff;border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:12px;font-weight:700;color:var(--ink)}
 .campsum .s b{font-size:16px;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;margin-right:3px}
 .campsum .s.hot b{color:var(--alert)}
-.campfilter{display:flex;gap:7px;overflow-x:auto;padding:10px 0 8px;scrollbar-width:none}
+.brandbar{display:flex;align-items:center;gap:8px;margin:12px 0 2px}
+.brandbar label{font-size:11.5px;font-weight:700;color:var(--soft);flex:none}
+.brandbar select{flex:1;min-width:0;font-family:inherit;font-size:13px;font-weight:700;color:var(--ink);
+ background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 12px;-webkit-appearance:none;appearance:none;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%235C6660' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+ background-repeat:no-repeat;background-position:right 12px center;cursor:pointer}
+.campfilter{display:flex;gap:7px;overflow-x:auto;padding:8px 0;scrollbar-width:none}
 .campfilter::-webkit-scrollbar{display:none}
 .campfilter button{flex:none;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:700;font-size:12.5px;font-family:inherit;padding:7px 13px;border-radius:99px;cursor:pointer;white-space:nowrap}
 .campfilter button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
