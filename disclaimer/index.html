@@ -167,10 +167,12 @@ h2{font-size:17px;font-weight:900;margin:24px 0 12px}
 .mtx td.best .v{font-weight:900;color:var(--ink)}
 /* 業種トグル */
 .mtx tr.strow.hidden{display:none}
-.mtx td.cattoggle{position:sticky;left:0;z-index:2;background:var(--paper);text-align:left;width:auto;
- padding:11px 12px;font-size:12.5px;font-weight:900;color:var(--ink);cursor:pointer;user-select:none;
+.mtx td.cattoggle{background:var(--paper);text-align:left;padding:0;cursor:pointer;user-select:none;
  border-left:none;border-bottom:1px solid var(--line)}
 .mtx td.cattoggle:hover{background:#EFEFE9}
+/* ラベル自体をsticky左固定(colspanセルへのstickyは効かないため中のspanを固定) */
+.mtx .catin{position:sticky;left:0;z-index:2;display:inline-flex;align-items:center;box-sizing:border-box;
+ padding:11px 12px;font-size:12.5px;font-weight:900;color:var(--ink);background:inherit}
 .mtx .caret{display:inline-block;margin-right:8px;color:var(--green);font-size:11px;transition:transform .15s;transform:rotate(90deg)}
 .mtx .cathead.collapsed .caret{transform:rotate(0)}
 .mtx .cnt{margin-left:8px;font-size:10.5px;font-weight:700;color:var(--soft);background:#fff;
