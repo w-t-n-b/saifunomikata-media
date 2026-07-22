@@ -149,8 +149,12 @@ h2{font-size:17px;font-weight:900;margin:24px 0 12px}
 .cardgrid .nm{font-size:13px;font-weight:700;line-height:1.4}
 .cardgrid .sub{font-size:11px;color:var(--soft)}
 .cardgrid .v{font-size:11.5px;font-weight:900;color:var(--green)}
-/* 早見表 */
-.mtx{overflow:auto;max-height:74vh;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding-left:0;padding-right:0}
+/* 早見表(縦=ページスクロール, 横=このボックス内スクロール) */
+.mtx{overflow:auto;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding-left:0;padding-right:0}
+/* ページを下スクロールした時に上部へピン留めするヘッダ複製 */
+.mtxsticky{position:fixed;z-index:15;overflow-x:auto;overflow-y:hidden;background:var(--ink);
+ box-shadow:0 4px 10px rgba(27,36,32,.14);scrollbar-width:none;pointer-events:none;display:none}
+.mtxsticky::-webkit-scrollbar{display:none}
 .mtx table{border-collapse:collapse;font-variant-numeric:tabular-nums;min-width:100%;table-layout:fixed}
 .mtx th,.mtx td{box-sizing:border-box}
 .mtx thead th{position:sticky;top:0;z-index:3;background:var(--ink);color:#fff;padding:10px 8px;font-size:10.5px;font-weight:700;
