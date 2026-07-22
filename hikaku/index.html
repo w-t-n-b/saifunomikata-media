@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja"><head>
+<script>document.documentElement.classList.add("js")</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>店×カード 還元率 早見表【2026】どのカードがどの店で得か一覧</title>
 <meta name="description" content="主要クレジットカードが、店ごとに実質何%になるかを一覧できる早見表。最適な払い方込みで最高値を強調。">
@@ -61,6 +62,13 @@ h2{font-size:17px;font-weight:900;margin:24px 0 12px}
 .tag.dim{background:#fff;border:1px dashed #C9CBC2;transform:rotate(1.5deg);box-shadow:none}
 .tag.dim .cap{color:var(--soft)} .tag.dim .big{color:var(--mute)}
 .vs{text-align:center;color:var(--soft);font-size:12px;line-height:1.5}
+/* ヒーロー値札の入場アニメ(反対側からスライドイン・初回表示時に発火) */
+@keyframes tagInR{from{opacity:0;transform:translateX(52px) rotate(-2deg)}to{opacity:1;transform:translateX(0) rotate(-2deg)}}
+@keyframes tagInL{from{opacity:0;transform:translateX(-52px) rotate(1.5deg)}to{opacity:1;transform:translateX(0) rotate(1.5deg)}}
+.js .cmprow .tag{opacity:0}
+.cmprow.play .tag{animation:tagInR .6s cubic-bezier(.2,.7,.3,1) both}
+.cmprow.play .tag.dim{animation:tagInL .6s cubic-bezier(.2,.7,.3,1) .09s both}
+@media(prefers-reduced-motion:reduce){.js .cmprow .tag{opacity:1}.cmprow.play .tag,.cmprow.play .tag.dim{animation:none}}
 /* 値札 小(インライン) */
 .tagp{display:inline-flex;align-items:baseline;gap:1px;background:var(--yellow);color:var(--ink);border-radius:6px;
  padding:3px 9px;font-weight:900;box-shadow:0 2px 0 rgba(27,36,32,.12);transform:rotate(-1.5deg)}
